@@ -1,0 +1,41 @@
+main {
+    border: 5px solid red;
+}
+
+div {
+    border: 5px solid green;
+    font-size: 40px;
+}
+
+.caixa div {
+    box-sizing: border-box;
+}
+
+.caixa div:nth-child(3) {
+    background-color: black;
+    color: white;
+    order: -1;
+    align-self: flex-end;
+    align-self: center;
+    align-self: flex-start;
+    align-self: stretch;
+}
+
+.caixa div {
+    width: 100px;
+    flex-grow: 1;
+}
+
+.caixa div:nth-child(1) {
+    flex-grow: 2;
+}
+
+.caixa {
+    width: 300px;
+    flex-shrink: 1;
+}
+
+.caixa div:nth-child(4) {
+    flex-shrink: 5;
+}
+
