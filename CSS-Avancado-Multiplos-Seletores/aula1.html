@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mútiplos seletores</title>
+</head>
+<body>
+    <!-- 1. Sem espaço (div.title) = "Mesmo elemento"
+
+    O que significa: O elemento precisa ser uma <div> E ter a classe title ao mesmo tempo. -->
+    <div class="title">Eu fico vermelho!</div>
+    <p class="title">Eu NÃO fico (sou p, não div).</p>
+
+
+    <!-- 2. Com espaço (div .title) = "Dentro de..." (Pai e Filho)
+
+    O que significa: Procure qualquer item com a classe title que esteja guardado dentro de uma <div>.  -->
+    <div>
+        <p class="title">Eu fico vermelho! (Estou dentro da div)</p>
+    </div>
+    <p class="title">Eu NÃO fico (estou fora de qualquer div).</p>
+
+
+    <!-- 3. Com vírgula (div, .title) = "Lista de compras" (E também)
+
+    O que significa: Pinte todas as <div> do site E TAMBÉM tudo que tiver a classe title, não importa onde estejam.  -->
+
+    <div>Eu fico vermelho!</div>
+    <p class="title">Eu TAMBÉM fico vermelho!</p>
+
+    
+    
+<!-- Resumo da regra de ouro:
+
+Espaço = Entrar no elemento (Buscar o filho).
+Vírgula = Separar elementos diferentes (E também).
+Sem espaço = Juntar características no mesmo elemento. -->
+</body>
+</html>
