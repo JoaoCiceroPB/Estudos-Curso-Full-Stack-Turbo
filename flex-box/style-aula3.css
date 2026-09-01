@@ -1,0 +1,28 @@
+main{
+    border: 5px solid red;
+}
+
+div {
+    border: 5px solid green;
+    font-size: 40px;
+}
+
+
+
+.caixa div {
+    box-sizing: border-box;
+}
+
+.caixa {
+    display: flex;
+}
+
+.caixa div {
+   /* flex-basis: 100px; */
+    width:200px;
+}
+
+.caixa div:nth-child(4) {
+/* grow shrink basis*/
+    flex: 3 6 100px;
+}
